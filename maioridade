@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="idade" placeholder="Idade">
+<button onclick="verificar()">Verificar</button>
+
+<p id="res"></p>
+
+<script>
+function verificar() {
+  let idade = Number(document.getElementById("idade").value);
+
+  if (idade >= 18) {
+    res.innerText = "Maior de idade";
+  } else {
+    res.innerText = "Menor de idade";
+  }
+}
+</script>
+
+</body>
+</html>
