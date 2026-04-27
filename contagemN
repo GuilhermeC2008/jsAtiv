@@ -1,0 +1,16 @@
+<input id="num">
+<button onclick="contar()">Contar</button>
+<p id="r"></p>
+
+<script>
+function contar() {
+  let n = Number(num.value);
+  let txt = "";
+
+  for (let i = 1; i <= n; i++) {
+    txt += i + " ";
+  }
+
+  r.innerText = txt;
+}
+</script>
