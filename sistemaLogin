@@ -1,0 +1,26 @@
+<input id="user">
+<input id="pass" type="password">
+<button onclick="login()">Entrar</button>
+<p id="r"></p>
+
+<script>
+let tentativas = 0;
+
+function login() {
+  let u = user.value;
+  let p = pass.value;
+
+  if (u === "admin" && p === "1234") {
+    r.innerText = "Acesso liberado";
+    return;
+  }
+
+  tentativas++;
+
+  if (tentativas >= 3) {
+    r.innerText = "Bloqueado";
+  } else {
+    r.innerText = "Erro (" + tentativas + ")";
+  }
+}
+</script>
