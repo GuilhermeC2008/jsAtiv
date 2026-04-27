@@ -1,0 +1,21 @@
+<input id="n1">
+<input id="n2">
+<input id="op" placeholder="+ - * /">
+<button onclick="calc()">Calcular</button>
+<p id="res"></p>
+
+<script>
+function calc() {
+  let a = Number(n1.value);
+  let b = Number(n2.value);
+  let op = op.value;
+  let r;
+
+  if (op === "+") r = a + b;
+  else if (op === "-") r = a - b;
+  else if (op === "*") r = a * b;
+  else if (op === "/") r = a / b;
+
+  res.innerText = r;
+}
+</script>
