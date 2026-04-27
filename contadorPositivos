@@ -1,0 +1,16 @@
+<button onclick="testar()">Começar</button>
+<p id="r"></p>
+
+<script>
+function testar() {
+  let cont = 0;
+
+  for (let i = 0; i < 5; i++) {
+    let n = Number(prompt("Digite um número"));
+
+    if (n > 0) cont++;
+  }
+
+  r.innerText = "Positivos: " + cont;
+}
+</script>
