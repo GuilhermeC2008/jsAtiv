@@ -1,0 +1,18 @@
+<input id="num">
+<button onclick="add()">Adicionar</button>
+<p id="r"></p>
+
+<script>
+let soma = 0;
+
+function add() {
+  let n = Number(num.value);
+
+  if (n === 0) {
+    r.innerText = "Soma total: " + soma;
+    return;
+  }
+
+  soma += n;
+}
+</script>
