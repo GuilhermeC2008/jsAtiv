@@ -1,0 +1,16 @@
+<input id="num">
+<button onclick="fat()">Calcular</button>
+<p id="r"></p>
+
+<script>
+function fat() {
+  let n = Number(num.value);
+  let res = 1;
+
+  for (let i = 1; i <= n; i++) {
+    res *= i;
+  }
+
+  r.innerText = res;
+}
+</script>
