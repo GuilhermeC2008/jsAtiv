@@ -1,0 +1,14 @@
+<input id="num">
+<button onclick="tabuada()">Gerar</button>
+<ul id="lista"></ul>
+
+<script>
+function tabuada() {
+  let n = Number(num.value);
+  lista.innerHTML = "";
+
+  for (let i = 1; i <= 10; i++) {
+    lista.innerHTML += `<li>${n} x ${i} = ${n*i}</li>`;
+  }
+}
+</script>
