@@ -1,0 +1,15 @@
+<input id="n1">
+<input id="n2">
+<input id="n3">
+<button onclick="media()">Calcular</button>
+<p id="r"></p>
+
+<script>
+function media() {
+  let m = (Number(n1.value)+Number(n2.value)+Number(n3.value))/3;
+
+  if (m >= 7) r.innerText = "Aprovado";
+  else if (m >= 5) r.innerText = "Recuperação";
+  else r.innerText = "Reprovado";
+}
+</script>
