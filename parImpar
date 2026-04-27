@@ -1,0 +1,12 @@
+<input id="num">
+<button onclick="ver()">Ver</button>
+<p id="r"></p>
+
+<script>
+function ver() {
+  let n = Number(num.value);
+
+  if (n % 2 === 0) r.innerText = "Par";
+  else r.innerText = "Ímpar";
+}
+</script>
